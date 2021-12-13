@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="w3-container w3-center">
+    
+    <h3 title="Github">
+        Github
+        <span *ngIf="Github else unAuthorized_github" class="label success" >Success
+            <i class="fa fa-check"></i> 
+        </span>    
+        <ng-template #unAuthorized_github>
+        <span class="label unAuthorized">unAuthorized
+            <i class="fa fa-close"></i>           
+        </span>
+        <button class="w3-button w3-red"  (click)= "onClick()">Authorize Github account</button>
+       
+    </ng-template>      
+      
+  </h3>
+  <h3>Discord
+    <span *ngIf="Discord else unAuthorized_discord" class="label success" >Success
+        <i class="fa fa-check"></i>
+    </span>
+    <ng-template #unAuthorized_discord>
+    <span class="label unAuthorized">unauthorized
+        <i class="fa fa-close"></i>
+    </span>
+    <button class="w3-button w3-red" (click)= "onClick()">Authorize Github account</button>
+    </ng-template>          
+</h3>
+    </div>
+    <button (click)="joinDc()">Join discord</button>
+

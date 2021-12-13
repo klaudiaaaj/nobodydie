@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/AngularAAD'),
+      dir: require('path').join(__dirname, './coverage/EngClient'),
       subdir: '.',
       reporters: [
         { type: 'html' },

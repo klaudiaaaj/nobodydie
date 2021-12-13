@@ -1,0 +1,14 @@
+.label {
+    color: #ffffff;
+    padding: 10px;
+  }
+.success {background-color: #04AA6D;} /* Green */
+.unAuthorized {background-color: #e20000;} /* Green */
+.w3-red{
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+h3{   
+    margin-top: 50px;
+    
+}
